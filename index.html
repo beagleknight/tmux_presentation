@@ -51,6 +51,25 @@
             <li><mark>Terminal 6:</mark> git/rspec/stuff</li>
           </ul>
         </div>
+
+        <div data-step="move">
+          Then... a wild bug appear in a random PHP project...
+          <ul class="box" style="margin-top: 10px; padding: 10px; text-align: left">
+            <li><mark>Terminal 7:</mark> Vim</li>
+            <li><mark>Terminal 8:</mark> Apache server</li>
+            <li><mark>Terminal 9:</mark> Log or something</li>
+          </ul>
+        </div>
+
+        <div data-step="move">
+          Result...
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <img src="assets/image/over9000.jpg" class="bordered" style="width: 1000px;" />
       </article>
     </section>
 
@@ -88,6 +107,9 @@
         </div>
       </article>
 
+    </section>
+
+    <section>
       <article>
         <div>
           <h2 style="margin-bottom: 20px;">tmux with initial configuration</h2>
@@ -112,239 +134,367 @@
       </article>
     </section>
 
-        <!--<section>
-            <article>
-                <header>
-                    <h2>Header element</h2>
-                    <h4>Header subelement</h2>
-                </header>
+    <section>
+      <article>
+        <header class="box">
+          <h2>Commands</h2>
+        </header>
 
-                <footer>
-                    <h2>Footer element</h2>
-                    <h4>Footer subelement</h2>
-                </footer>
+        <div>
+          Let's review some useful commands...
+        </div>
 
-                <div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </div>
-                <div>
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </div>
-            </article>
-        </section>
+        
+        <div data-step="move">
+          <div>
+            Wait! All commands begin with a combination of keys called PREFIX:
+          </div>
 
-        <section>
-            <article>
-                <header class="box">
-                    <h2>Header element (.box)</h2>
-                    <h4>Subheader element</h2>
-                </header>
+          <div class="box" style="padding: 10px">
+           Default combination: Ctrl-b
+          </div>
+        </div>
 
-                <footer class="box white">
-                    <h2>Footer element (.box .white)</h2>
-                    <h4>Footer subelement</h2>
-                </footer>
-            </article>
-        </section>
+        <div data-step="move">
+          <div>
+            Let's remap PREFIX to something more comfortable:
+          </div>
 
-        <section>
-            <article data-size="middle">
-                <blockquote>JavaScript doesn't suck! You're just doing it wrong.</blockquote>
-                <cite>Doug Crockford</cite>
-            </article>
-        </section>
+          <div style="padding: 10px">
+            <pre data-language="tmux">
+              # $HOME/.tmux.conf
+              # Use C-a as prefix for all sessions
+              set -g prefix C-a
+            </pre>
+          </div>
+        </div>
 
-        <section data-color="red" data-color="image">
-            <article>
-                <h1>vertical slides</h1>
-                <h3><mark>(press down to view next slide)</mark></h3>
-            </article>
-            <article>
-                <h1>second slide</h1>
-                <h3><mark>(press down to view next slide)</mark></h3>
-            </article>
-            <article>
-                <h1>third slide</h1>
-                <h3><mark>Right! Now you can press right key.</mark></h3>
-            </article>
-        </section>
+        <div data-step="move">
+          Restart tmux and you can use Ctrl-a as the PREFIX.
+        </div>
+      </article>
+    </section>
 
-        <section>
-            <article>
-                <h2>data-<mark>step</mark></h2>
-                <h4>...a cool property for elements in slide.</h4>
+    <section>
+      <article>
+        <header class="box">
+          <h2>Commands</h2>
+        </header>
 
-                <div>
+        <div>
+          <ul class="box" style="margin-top: 10px; padding: 10px; text-align: left">
+            <li>PREFIX c: Create another window</li>
+            <li>PREFIX n: Next window</li>
+            <li>PREFIX p: Previous window</li>
+            <li>PREFIX w: Display list of windows</li>
+            <li>PREFIX %: Create vertical pane</li>
+            <li>PREFIX ": Create horizontal window</li>
+            <li>PREFIX Arrow keys: Move between panes</li>
+            <li>PREFIX x: Close pane or window if it is the last pane</li>
+            <li>PREFIX d: De-attach session</li>
+          </ul>
+        </div>
 
-                </div>
-                <div>
-                    <ul>
-                        <li><mark>press down to view next step</mark></li>
-                        <li data-step="fade">Step with "fade"</li>
-                        <li data-step="boom">Step with "boom"</li>
-                        <li data-step="zoom">Step with "zoom"</li>
-                        <li data-step="move">Step with "move"</li>
-                        <li data-step="move alternate">Step with "move alternate"</li>
-                        <li data-step="fade"><mark>press down to see in vertical slide</mark></li>
-                    </ul>
-                </div>
+        <div data-step="move">
+          <div>
+            Tons of commands, I need help!
+          </div>
 
-                <div>
-            </article>
+          <div class="box" style="padding: 10px">
+            PREFIX ? to the rescue!
+          </div>
+        </div>
+      </article>
+    </section>
 
-            <article>
-                <header>
-                    <h2>press down...</h2>
-                </header>
-                <h1 data-step="move">yeah!!!</h1>
-                <h2 data-step="move alternate"><mark>it works!</mark></h2>
-            </article>
-        </section>
+    <section>
+      <article>
+        <header class="box">
+          <h2>Customization</h2>
+        </header>
 
-        <section data-image="http://farm6.staticflickr.com/5142/5837835862_81f956dd69.jpg" style="background-image: url(http://farm6.staticflickr.com/5142/5837835862_81f956dd69.jpg);">
-            <article>
-                <footer class="box">
-                    <h2>data-image</h2>
-                    <h3>... a easy way to full-screen images</h3>
-                </footer>
-            </article>
-        </section>
+        <div>
+          We can customize almost everything on tmux through .tmux.conf file.
+        </div>
 
-        <section>
-            <article>
-                <header>
-                    <h2>Embedded code</h2>
-                    <h4><mark>a great way to show your code</mark></h4>
-                </header>
+        <div data-step="move">
+          but first let's add an useful mapping for reloading configuration:
+          <div style="padding: 10px">
+            <pre data-language="tmux">
+              # Bind PREFIX r to reload config file
+              bind r source-file ~/.tmux.conf \; display "Reloaded!"
+            </pre>
+          </div>
+        </div>
 
-                <div>
-                    <pre class="margin-top" contenteditable="true">
-<code data-language="javascript">$.ajax({
-    type: 'POST', // defaults to 'GET'
-    url: 'http://rest',
-    data: {user: 'soyjavi', pass: 'twitter'},
-    dataType: 'json', //'json', 'xml', 'html', or 'text'
-    async: true,
-    success: function(response) { ... },
-    error: function(xhr, type) { ... }
-});</code>          </pre>
+        <div data-step="move">
+          Now we can reload .tmux.conf file configuration live!
+        </div>
+      </article>
+    </section>
 
-                    <h4><mark>Press to view code with data-step</mark></h4>
+    <section>
+      <article>
+        <header class="box">
+          <h2>Customization</h2>
+        </header>
 
-           <pre class="margin-top" data-step="move alternate">
-<code data-language="javascript">$.ajax({
-    type: 'POST', // defaults to 'GET'
-    url: 'http://rest',
-    data: {user: 'soyjavi', pass: 'twitter'},
-    dataType: 'json', //'json', 'xml', 'html', or 'text'
-    async: true,
-    success: function(response) { ... },
-    error: function(xhr, type) { ... }
-});</code>          </pre>
-                </div>
-            </article>
-        </section>
+        <div>
+          <h3>Loving Vim?</h3>
+        </div>
+
+        <div data-step="move">
+          Use vim-like movement keys for panes and help
+          <div style="padding: 10px">
+            <pre data-language="tmux">
+              # Enable vim-mode
+              setw -g mode-keys vi
+
+              # Vim-like pane movement keys
+              bind h select-pane -L
+              bind j select-pane -D
+              bind k select-pane -U
+              bind l select-pane -R
+
+              # Vim-like pane resize keys
+              bind -r H resize-pane -L 5
+              bind -r J resize-pane -D 5
+              bind -r K resize-pane -U 5
+              bind -r L resize-pane -R 5
+            </pre>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <header class="box">
+          <h2>Customization</h2>
+        </header>
+
+        <div>
+          <h3>What about appearence?</h3>
+        </div>
+
+        <div data-step="move">
+          <div style="padding: 10px">
+            <pre data-language="tmux">
+              # Enable 256 colors support
+              set -g default-terminal "screen-256color"
+
+              # Set status bar foreground and background color
+              set -g status-fg white
+              set -g status-bg black
+
+              # Set window list colors
+              # -- inactive windows
+              setw -g window-status-fg cyan
+              setw -g window-status-bg default
+              setw -g window-status-attr dim
+              # -- active window
+              setw -g window-status-current-fg white
+              setw -g window-status-current-bg red
+              setw -g window-status-current-attr bright
+
+              # Set command line colors
+              set -g message-fg white
+              set -g message-bg black
+              set -g message-attr bright
+            </pre>
+          </div>
+        </div>
+      </article>
+    </section>
+    
+    <section>
+      <article>
+        <header class="box">
+          <h2>Customization</h2>
+        </header>
+
+        <div>
+          <h3>My status bar</h3>
+        </div>
+
+        <div data-step="move">
+          <div style="padding: 10px">
+            <pre data-language="tmux">
+              # Set status left panel
+              set -g status-left-length 40
+              set -g status-left "#[fg=green]#S #[fg=yellow]#I #[fg=cyan]#P"
+
+              # Set status right panel
+              set -g status-right "#[fg=cyan]%d %b %R"
+
+              # Support for UTF-8
+              set -g status-utf8 on
+
+              # Set status bar refresh time
+              set -g status-interval 60
+
+              # Set window list configuration
+              set -g status-justify centre
+
+              # Visual notification for window activity
+              setw -g monitor-activity on
+              set -g visual-activity on
+            </pre>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <header class="box">
+          <h2>Sessions</h2>
+        </header>
+
+        <div>
+          Best feature ever! :)
+        </div>
+
+        <div data-step="move">
+          Remember de-attach session command explained earlier?
+          <div style="padding: 10px">
+            <div class="box" style="padding: 10px">
+              PREFIX d
+            </div>
+          </div>
+        </div>
+
+        <div data-step="move">
+          Re-attach the session from command line:
+          <div style="padding: 10px">
+            <pre data-language="bash">
+              $ tmux attach -t $SESSION_NAME
+            </pre>
+          </div>
+        </div>
+
+        <div data-step="move">
+          Create a new session from command line:
+          <div style="padding: 10px">
+            <pre data-language="bash">
+              $ tmux new-session -s $SESSION_NAME
+            </pre>
+          </div>
+        </div>
+
+        <div data-step="move">
+          You can list all sessions from command line too:
+          <div style="padding: 10px">
+            <pre data-language="bash">
+              $ tmux ls
+            </pre>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <header class="box">
+          <h2>Sessions</h2>
+        </header>
+
+        <div>
+          Very useful for pair programming
+        </div>
+
+        <div data-step="move">
+          <ul class="box" style="margin-top: 10px; padding: 10px; text-align: left">
+            <li>User A creates a new session called "default"</li>
+            <li>User B connects to User A's computer using ssh and User A credentials</li>
+            <li>User B re-attach to session default</li>
+          </ul>
+        </div>
+
+        <div data-step="move">
+          Another option:
+          <ul class="box" style="margin-top: 10px; padding: 10px; text-align: left">
+            <li>User A creates a new session using a socket directory (-S option)</li>
+            <li>User B connects to User A's computer using ssh and his own credentials</li>
+            <li>User B re-attach to session using the socket directory</li>
+          </ul>
+        </div>
+      </article>
+    </section>
 
 
-        <section>
-            <article>
-                <header>
-                    <h2>Columns</h2>
-                    <h4><mark>divide your slide easily</mark></h4>
-                </header>
+    <section>
+      <article>
+        <header class="box">
+          <h2>Sessions</h2>
+        </header>
 
-                <div>
-                    <span class="column box big">
-                        .box .big
-                    </span>
-                    <span class="column box big">
-                        .box .big
-                    </span>
-                </div>
+        <div>
+          Okay, sessions are cool but what about if I shutdown my computer?
+        </div>
 
-                <div>
-                    <span class="column box medium">
-                        .box .medium
-                    </span>
-                    <span class="column box medium">
-                        .box .medium
-                    </span>
-                    <span class="column box medium">
-                        .box .medium
-                    </span>
-                </div>
+        <div data-step="move">
+          Enter tmuxinator!
+          <div style="padding: 10px">
+            <pre data-language="bash">
+              # Rubygems required
+              $ gem install tmuxinator
+              $ tmuxinator doctor # Check dependencies
+            </pre>
+          </div>
+        </div>
 
-                <div>
-                    <span class="column box small">
-                         .box .small
-                    </span>
-                    <span class="column box small">
-                        .box .small
-                    </span>
-                    <span class="column box small">
-                        .box .small
-                    </span>
-                    <span class="column box small">
-                        .box .small
-                    </span>
-                </div>
+        <div data-step="move">
+          tmuxinator rocks :)!
+          <div style="padding: 10px">
+            <pre data-language="bash">
+              $ tmuxinator open lolcats # Create or edit project lolcats
+              $ tmuxinator start lolcats
+            </pre>
+          </div>
+        </div>
+      </article>
+    </section>
 
-                <div><mark>Example with images</mark></div>
-                <div>
-                    <span class="column small">
-                        <img src="http://tapquo.com/images/team-javi.jpg" class="bordered size_200"/>
-                        <h4><a href="http://twitter.com/soyjavi"><mark>@soyjavi</mark></a></h4>
-                    </span>
-                    <span class="column small">
-                        <img src="http://tapquo.com/images/team-aitor.jpg" class="bordered size_200"/>
-                        <h4><a href="http://twitter.com/soyjavi"><mark>@aitorjvoa</mark></a></h4>
-                    </span>
-                    <span class="column small">
-                        <img src="http://tapquo.com/images/team-mikel.jpg" class="bordered size_200"/>
-                        <h4><a href="http://twitter.com/soyjavi"><mark>@mikel_ade</mark></a></h4>
-                    </span>
-                    <span class="column small">
-                        <img src="http://tapquo.com/images/team-janire.jpg" class="bordered size_200"/>
-                        <h4><a href="http://twitter.com/soyjavi"><mark>@janixy91</mark></a></h4>
-                    </span>
-                </div>
-            </article>
-        </section>
+    <section>
+      <article>
+        <header class="box">
+          <h2>Hints</h2>
+        </header>
 
-        <section>
-            <article>
-                <header>
-                    <h2><mark>Nerd</mark> behind #kinout<mark>JS</mark></h2>
-                    <h4><mark>...dangerous with SublimeText</mark></h4>
-                </header>
-                <div class="top">
-                    <span class="column big">
-                        <img src="assets/image/soyjavi.jpg" class="bordered size_256 box">
-                        <h4><a href="http://twitter.com/soyjavi"><mark>@soyjavi</mark></a></h4>
-                    </span>
+        <div>
+          Launch tmux when open a terminal:
+          <div style="padding: 10px">
+            <pre data-language="zsh">
+              # $HOME/.zshrc
+              # Launch tmux by default
+              if [[ "$TERM" != "screen-256color" ]]
+              then
+                tmux attach-session -t default || tmux new-session -s default
+                exit
+              fi
+            </pre>
+          </div>
+        </div>
+      </article>
+    </section>
 
-                    <span class="column big right">
-                        <ul>
-                            <li class="text size4">Leire's <mark>husband</mark></li>
-                            <li class="text size08">CEO & Founder at <mark>@tapquo</mark></li>
-                            <li class="text size08"><mark>@LungoJS</mark> & <mark>@QuoJS</mark> author</li>
-                            <li class="text size08"><mark>#Web</mark> believer & <mark>#W3C</mark> member</li>
-                            <li class="text size07"><mark>#JavaScript</mark> & #CleanCode lover</li>
-                            <li class="text size2"><mark>#HTML5</mark> evangelist </mark></li>
-                            <li class="text size09">...sometimes <mark>#Nerd Speaker</mark></li>
-                        </ul>
-                    </span>
-                </div>
-            </article>
-        </section>
+    <section>
+      <article>
+        <h1>Thanks!</h1>
+        <div>
+          <span class="column small">
+            <img src="https://secure.gravatar.com/avatar/24a48de1f9adfa69a9acc04f364c31e7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" class="bordered" />
+          </span>
+          <span class="column medium">
+            <span>david@imesmes.com</span>
+            <span>@ultrayoshi</span>
+            <span>http://github.com/ultrayoshi/<span>
+          </span>
+        </div>
+      </article>
+    </section>
 
-        <section>
-            <article>
-                <h1>...fork me on <mark>github</mark></h1>
-                <h2><a href="https://github.com/soyjavi/kinout"><mark>https://github.com/soyjavi/</mark>kinout</a></h2>
-            </article>
-            </section>-->
-    </div>
     <script src="assets/javascript/QuoJS.js"></script>
     <script src="assets/javascript//raf.js"></script>
     <script src="http://kinout.tapquo.com/build/kinout-1.0.js"></script>
